@@ -1,0 +1,8 @@
+<!-- app/views/users/show_qr_code.html.erb -->
+
+<h1>Two-Factor Authentication Setup</h1>
+<% if @qr_code_uri %>
+  <%= image_tag @qr_code_uri %>
+<% else %>
+  <p>Two-Factor Authentication is not enabled.</p>
+<% end %>

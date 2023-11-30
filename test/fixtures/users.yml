@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  password_digest: MyString
+  otp_secret_key: MyString
+  2fa_enabled: false
+
+two:
+  email: MyString
+  password_digest: MyString
+  otp_secret_key: MyString
+  2fa_enabled: false

@@ -1,0 +1,12 @@
+<!-- app/views/sessions/new.html.erb -->
+<h2>Login</h2>
+
+<%= form_for :session, url: sessions_path do |form| %>
+  <%= form.label :email %>
+  <%= form.email_field :email %>
+
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+
+  <%= form.submit 'Login' %>
+<% end %>

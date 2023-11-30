@@ -1,0 +1,9 @@
+<!-- app/views/sessions/login_otp.html.erb -->
+<h2>Enter OTP</h2>
+
+<%= form_for :session, url: verify_otp_path do |form| %>
+  <%= form.label :otp %>
+  <%= form.text_field :otp %>
+
+  <%= form.submit 'Verify OTP' %>
+<% end %>

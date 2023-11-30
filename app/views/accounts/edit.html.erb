@@ -1,0 +1,14 @@
+<!-- app/views/account/edit.html.erb -->
+<h2>Account Settings</h2>
+
+<% if current_user.two_fa_enabled? %>
+  <p>Two-Factor Authentication: Enabled</p>
+  <%= link_to 'Disable Two-Factor Authentication', disable_two_factor_accounts_path, method: :delete %><br/>
+<% else %>
+  <p>Two-Factor Authentication: Disabled</p>
+  <%= link_to 'Enable Two-Factor Authentication', enable_two_factor_accounts_path, method: :post %><br/>
+<% end %>
+
+<%= link_to 'Update Password', update_password_accounts_path, method: :patch %><br/>
+
+<%= link_to 'Logout', logout_path, method: :delete %><br/>
